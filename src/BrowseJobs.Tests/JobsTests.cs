@@ -35,26 +35,4 @@ namespace BrowseJobs.Tests
             _resultMock.Verify(x => x.Display(), Times.Once);
         }
     }
-
-    public interface IService {
-        IResult Download();
-    }
-
-    public interface IResult {
-        void Display();
-    }
-
-    public class Jobs {
-
-        private readonly IResult result;
-
-        public Jobs(IService service)
-        {
-            this.result = service.Download();
-        }
-
-        public void Display() {
-            this.result.Display();
-        }
-    }
 }
