@@ -46,11 +46,10 @@ namespace BrowseJobs.Tests
 
     public class Jobs {
 
-        private readonly IService service;
         private readonly IResult result;
+
         public Jobs(IService service)
         {
-            this.service = service;
             this.result = service.Download();
         }
 
