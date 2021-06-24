@@ -1,4 +1,4 @@
-namespace BrowseJobs.Tests
+namespace BrowseJobs
 {
     public interface IResult {
         void Display();

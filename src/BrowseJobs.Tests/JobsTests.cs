@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using Moq;
+using BrowseJobs;
 
 namespace BrowseJobs.Tests
 {
